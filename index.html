@@ -336,16 +336,26 @@ Cada una de estas capas se compone de una o más neuronas.</p>
 <p>La capa de salida tendrá tantas neuronas como respuestas se quieran obtener de la red neuronal.</p>
 <p>Entre las capas de entrada y salida, es posible añadir todas las capas que consideremos necesarias, cada una con la cantidad de neuronas que nos parezca más adecuada.</p>
 <p>//Ejemplo//
-Si buscamos saber si una planta está sana o no, en base a su incremento de crecimiento, color RGB y longitud de las hojas.</p>
-<p>Un modelo basado en red neuronal, tendrá una capa de entrada con cinco neuronas. Cada una para recibir cada dato de entrada.</p>
+Si buscamos saber si una planta está sana o no, en base a su incremento de crecimiento, color RGB y número de hojas.</p>
+<p>Un modelo basado en red neuronal, tendrá una capa de entrada con cinco neuronas. Cada una de ellas recibi uno de las características de entrada.</p>
 <p>La capa de salida tendrá una única neurona, ya que buscamos una respuesta binaria (Sí o No está sana).</p>
-<p>Entre la capa de entrada y la capa de salida, opcionalmente, se podrían colocar otras capas con neuronas. Por ejemplo tres capas:
+<p>Entre la capa de entrada y la capa de salida, opcionalmente, se pueden colocar otras capas con neuronas. Por ejemplo tres capas:
     * Una primera, con 9 neuronas.
     * Una segunda, con 18 neuronas.
     * Una tercera, con 3 neuronas.</p>
-<p>Las salidas de cada neurona, está conectada como entrada de todas las neuronas de la siguiente capa.</p>
+<p>Las salidas de cada neurona de una capa, está conectada como entrada de todas las neuronas de la siguiente capa.</p>
+<p>En el ejmplo la capa de entrada tiene 5 neuronas, por lo tanto, cada una de las 9 neuronas de la primera capa tiene cinco datos de entrada.
+Esta capa generará 9 salidas, que corresponderán con las 9 entradas de cada una de las 18 neuronas de la segunda capa.
+Y así sucesivamente.</p>
+<p>Esto es lo que se llama la <strong>arquitectura de la red neuronal</strong>. </p>
 <h2 id="principios-de-funcionamiento">Principios de funcionamiento</h2>
-<p>Cada neurona aplica una función de Machine Learning sencilla, a los valores que recibe de entrada para producir una única salida. Las salidas de cada neurona de una capa se combinan como entradas de cada neurona de la siguiente capa. </p>
+<p>Cada neurona aplica una sencilla función de Machine Learning, a los valores de entrada y genera una única salida. </p>
+<p>Cada función matemática de cada neurona tiene unos coeficientes que pueden variarse para obtener diferentes resultados. </p>
+<p>En el poceso de *back propagation" se realizan estos ajustes en cada una de las neuronas del modelo, y se vuelve a probar el resultado de la red con otro dato de entrenamiento. </p>
+<p>Los coeficientes se van ajustando conforme la solución propuesta se aproxima más a la etiqueta de esos datos de entrada. Recuerda que es un aprendizaje supervisado.</p>
+<p>Tras varias veces repitiendo el proceso se logran una solución más aproximada a la correcta. Quedando establecidos los valor para cada coeficiente.</p>
+<p>Aquí surge uno de los problemas de las redes neuronales profundas, ya que no es fácil justificar el porqué de la solución que se obtiene.
+Dependiendo del problema que se intenta resolver, puede ser necesaria una justificación de la solución, con las redes neuronales profundas no es posible obtener la justificación.</p>
 
               
             </article>
