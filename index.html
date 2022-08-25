@@ -235,6 +235,26 @@
     Principios de funcionamiento
   </a>
   
+    <nav class="md-nav" aria-label="Principios de funcionamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    Requisitos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soluciones" class="md-nav__link">
+    Soluciones
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -305,6 +325,26 @@
     Principios de funcionamiento
   </a>
   
+    <nav class="md-nav" aria-label="Principios de funcionamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    Requisitos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soluciones" class="md-nav__link">
+    Soluciones
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -354,8 +394,18 @@ Y así sucesivamente.</p>
 <p>En el poceso de *back propagation" se realizan estos ajustes en cada una de las neuronas del modelo, y se vuelve a probar el resultado de la red con otro dato de entrenamiento. </p>
 <p>Los coeficientes se van ajustando conforme la solución propuesta se aproxima más a la etiqueta de esos datos de entrada. Recuerda que es un aprendizaje supervisado.</p>
 <p>Tras varias veces repitiendo el proceso se logran una solución más aproximada a la correcta. Quedando establecidos los valor para cada coeficiente.</p>
-<p>Aquí surge uno de los problemas de las redes neuronales profundas, ya que no es fácil justificar el porqué de la solución que se obtiene.
-Dependiendo del problema que se intenta resolver, puede ser necesaria una justificación de la solución, con las redes neuronales profundas no es posible obtener la justificación.</p>
+<p>Aquí surge uno de los problemas de las redes neuronales profundas, ya que no es fácil justificar el porqué de la solución que se obtiene.</p>
+<p>Hay problemas donde es relevante la justificación de la solución, con las redes neuronales profundas no es posible obtener esta justificación.</p>
+<h3 id="requisitos">Requisitos</h3>
+<p>Para que un problema pueda ser tratado con una red neuronal, los datos precisan cumplir ciertas condiciones. </p>
+<p>Una de ellas es, que los datos sean muy numerosos. Si solo se dispone de unos pocos cientos de datos, la red neuronal no será efectiva se deben buscar otras alternativas que aporta el Machine Learning.</p>
+<p>Los datos deben ser valores numéricos. Todos los datos deben ser valores numéricos, la red neuronal no procesa datos booleanos, ni textos categoricos, por ello es indispensable codificar los datos cualitativos. Existen varios procedimientos para esta tarea, como por ejemplo la técnica <em>One hot encoding</em>. </p>
+<p>Los datos deben estar normalizados en un rango de valores próximo. La red neuronal no será efectiva si los valores numericos son muy dispersos, de manera que es necesario realizar tareas de normalización para ajustar todos los valores numericos a rangos de valores próximos. De otra manera, los valores altos tendrían una relevancia excesiva en el modelo, generando desviaciones.</p>
+<h3 id="soluciones">Soluciones</h3>
+<p>Conocidos los requisitos, existen conjuntos de datos que son muy adecuados para ser procesados con redes neuronales. Por ejemplo las imágenes, que en definitiva se representan con matrices multidimensionales numéricas con valores entre 0 y 255.
+Analizando cada uno de los pixel que forman cada imagen.</p>
+<p>En este sentido se han desarrollado las <em>Redes Neuronales Convolucionales</em> que aplicando una capa convolucional (modificación de la imagen), están especializadas en el procesamiento de imágenes.</p>
+<p>También como evolución de estas, las redes neuronales adversarias, en este caso dos redes neuronales; una que genera imágenes y otra que evalúa la idoneidad de estas según el modelo elegido.</p>
 
               
             </article>
